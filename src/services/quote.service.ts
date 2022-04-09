@@ -8,6 +8,6 @@ export class QuoteService{
         
     }
     public getRandomQuote(){
-        return this.http.get();
+        return this.http.get('https://talaikis.com/api/quotes/random/');
     }
 }

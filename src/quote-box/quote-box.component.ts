@@ -17,10 +17,10 @@ export class QuoteBoxComponent{
     }
 
     public getQuote(){
-        this.quoteService.getRandomQuote().subscribe((data: quote) => {
-            this.quote = new quote(data.quote, data.author);
+        
+            this.quote = new quote(data: quote);
             console.log(this.quote);
-        });
+        
     }
 
 }
