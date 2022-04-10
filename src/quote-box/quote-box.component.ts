@@ -19,7 +19,7 @@ export class QuoteBoxComponent{
 
     public getQuote(){
         
-        this.quoteService.getRandomQuote().subscribe((data: any) =>{
+        this.quoteService.getRandomQuote().subscribe((data: anyQuote) =>{
             this.quote = new quote(data.quote, data.author)
             
 
