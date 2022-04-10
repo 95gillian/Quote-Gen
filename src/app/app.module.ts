@@ -6,11 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteService } from '../services/quote.service';
 import { QuoteBoxComponent } from '../quote-box/quote-box.component';
+import { LikeComponent } from './like/like.component';
+import { DislikeComponent } from './dislike/dislike.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteBoxComponent
+    QuoteBoxComponent,
+    LikeComponent,
+    DislikeComponent
     
   ],
   imports: [

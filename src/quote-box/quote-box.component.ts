@@ -28,4 +28,4 @@ export class QuoteBoxComponent{
     });
 }
 
-}
+}ng serve -o
