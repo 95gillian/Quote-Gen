@@ -1,22 +1,19 @@
 <div class="container text-center">
-  <div class="row ">
+  <div class="row jusify-content-center">
     <div class="card text-sucess mt-5">
         <blockquote class="blockquote">
             <p class="mb-0 p-3" style="width: 30rem;"><i class="fa fa-quote-left fa-lg"></i> {{quote.quote}}
             </p>
             <footer class="blockqute-footer text-sucess" [innerText]="quote.author"></footer>
         </blockquote>
-        <div class="row">
-          <a
-          target="blank"
-          [href]="'https://twitter.com/intent/tweet?text=' + quote.quote"
-          button
-          class="btn btn-outline-sucess m-2"
-          ><i class="fa fa-twitter"></i
-        ></a>
+        <div class="">
+          
   
         <button class="btn btn-outline-success m-2" (click)="getQuote()">
-          <i class="fa fa-plus"></i>
+          <i class="fa fa-thumbs-up"></i>
+        </button>
+        <button class="btn btn-outline-success m-2" (click)="getQuote()">
+          <i class="fa fa-thumbs-down"></i>
         </button>
 
         </div>

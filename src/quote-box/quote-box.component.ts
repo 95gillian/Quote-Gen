@@ -1,7 +1,7 @@
 import { quote } from "../models/quote.class";
 import { Component } from "@angular/core";
 import { QuoteService } from "src/services/quote.service";
-import { Quote } from "@angular/compiler";
+
 
 @Component({
     selector: 'quote-box',
@@ -18,9 +18,9 @@ export class QuoteBoxComponent{
     }
 
     public getQuote(): void{
-        
-        this.quoteService.getRandomQuote().subscribe((data:any )  => {
-             return this.quote = new quote(data.quote, data.author)
+                this.quoteService.getRandomQuote().subscribe((data:any)=> {
+
+             this.quote = new quote(data.quote, data.author)
             console.log(this.getQuote);
 
           
