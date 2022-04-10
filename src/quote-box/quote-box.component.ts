@@ -17,11 +17,11 @@ export class QuoteBoxComponent{
 
     }
 
-    public getQuote(){
+    public getQuote(): void{
         
-        this.quoteService.getRandomQuote().subscribe((data: anyQuote) =>{
-            this.quote = new quote(data.quote, data.author)
-            
+        this.quoteService.getRandomQuote().subscribe((data:any )  => {
+             return this.quote = new quote(data.quote, data.author)
+            console.log(this.getQuote);
 
           
         
