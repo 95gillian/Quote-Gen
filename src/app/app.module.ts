@@ -4,11 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteService } from 'src/services/quote.service';
+import { QuoteService } from '../services/quote.service';
+import { QuoteBoxComponent } from '../quote-box/quote-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuoteBoxComponent
+    
   ],
   imports: [
     BrowserModule,

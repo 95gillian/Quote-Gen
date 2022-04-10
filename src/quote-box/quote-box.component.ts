@@ -13,14 +13,19 @@ export class QuoteBoxComponent{
     public quote = new quote('','');
 
     constructor(public quoteService: QuoteService){
+        this.getQuote();
 
     }
 
     public getQuote(){
         
-            this.quote = new quote(data: quote);
-            console.log(this.quote);
+        this.quoteService.getRandomQuote().subscribe((data: any) =>{
+            this.quote = new quote(data.quote, data.author)
+            
+
+          
         
-    }
+    });
+}
 
 }
